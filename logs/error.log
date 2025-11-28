@@ -1,0 +1,53 @@
+2025-08-27T20:42:47.458Z | POST /api/auth/register | next is not defined | ReferenceError: next is not defined
+    at register (file:///Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/src/Controllers/authController.js:39:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-08-27T20:43:59.901Z | POST /api/auth/register | displayName is not defined | ReferenceError: displayName is not defined
+    at register (file:///Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/src/Controllers/authController.js:37:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-08-27T20:44:59.892Z | POST /api/auth/register | phone is not defined | ReferenceError: phone is not defined
+    at register (file:///Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/src/Controllers/authController.js:37:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-08-27T20:48:39.061Z | POST /api/auth/login | data and hash arguments required | Error: data and hash arguments required
+    at Object.compare (/Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/node_modules/bcrypt/bcrypt.js:204:17)
+    at /Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/node_modules/bcrypt/promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (/Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/node_modules/bcrypt/promises.js:17:12)
+    at Object.compare (/Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/node_modules/bcrypt/bcrypt.js:200:25)
+    at login (file:///Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/src/Controllers/authController.js:50:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-08-29T04:47:34.475Z | POST /api/auth/register | Expected ',' or '}' after property value in JSON at position 67 (line 4 column 5) | SyntaxError: Expected ',' or '}' after property value in JSON at position 67 (line 4 column 5)
+    at JSON.parse (<anonymous>)
+    at parse (/Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/node_modules/body-parser/lib/types/json.js:77:19)
+    at /Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/node_modules/body-parser/lib/read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (/Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/node_modules/raw-body/index.js:238:16)
+    at done (/Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-08-29T04:50:40.437Z | POST /api/auth/register | Expected double-quoted property name in JSON at position 63 (line 4 column 1) | SyntaxError: Expected double-quoted property name in JSON at position 63 (line 4 column 1)
+    at JSON.parse (<anonymous>)
+    at parse (/Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/node_modules/body-parser/lib/types/json.js:77:19)
+    at /Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/node_modules/body-parser/lib/read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (/Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/node_modules/raw-body/index.js:238:16)
+    at done (/Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-08-29T19:32:05.100Z | GET /api/users/search | isActive is not defined | ReferenceError: isActive is not defined
+    at searchUser (file:///Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/src/Controllers/userController.js:182:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-08-29T19:34:24.019Z | POST /api/users | saltRounds is not defined | ReferenceError: saltRounds is not defined
+    at createUser (file:///Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/src/Controllers/userController.js:196:54)
+    at Layer.handleRequest (/Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/node_modules/router/lib/route.js:157:13)
+    at isAdmin (file:///Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/src/Middlewares/isAdminMiddleware.js:10:3)
+    at Layer.handleRequest (/Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/node_modules/router/lib/route.js:157:13)
+    at file:///Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/src/Middlewares/authMiddleware.js:15:5
+    at /Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/node_modules/jsonwebtoken/verify.js:261:12
+    at getSecret (/Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/Users/gabs/Desktop/Inadaptados/NODE/PRACTICANDO/express-basic/node_modules/jsonwebtoken/verify.js:101:10)

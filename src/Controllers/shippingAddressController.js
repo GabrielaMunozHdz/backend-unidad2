@@ -1,4 +1,4 @@
-import ShippingAddress from '../models/shippingAddress.js';
+import ShippingAddress from '../Models/shippingAddress.js';
 
 // Crear una nueva dirección de envío
 const createShippingAddress = async (req, res, next) => {

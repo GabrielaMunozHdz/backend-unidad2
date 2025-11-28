@@ -1,4 +1,4 @@
-import PaymentMethod from '../models/paymentMethod.js';
+import PaymentMethod from '../Models/paymentMethod.js';
 import errorHandler from '../Middlewares/errorHandler.js';
 
 async function getPaymentMethods(req, res) {

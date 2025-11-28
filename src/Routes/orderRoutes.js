@@ -9,7 +9,7 @@ import {
   updateOrderStatus,
   updatePaymentStatus,
   deleteOrder,
-} from '../controllers/orderController.js';
+} from '../Controllers/orderController.js';
 import authMiddleware from '../Middlewares/authMiddleware.js';
 import isAdmin from '../Middlewares/isAdminMiddleware.js';
 
